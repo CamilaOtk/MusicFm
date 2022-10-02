@@ -1,0 +1,8 @@
+.content-container {
+    align-content: space-between;
+    width: 100%;
+    height: calc(100vh - 78px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}

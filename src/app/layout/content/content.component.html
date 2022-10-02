@@ -1,0 +1,5 @@
+<div class="content-container">
+  <div *ngFor="let item of listItems; let i = index">
+    <cardbase-app [type]="item.type" [item]="item"></cardbase-app>
+  </div>
+</div>
