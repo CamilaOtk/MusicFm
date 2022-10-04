@@ -10,6 +10,10 @@ body{
     overflow: hidden;
 }
 
+.filter-invert{
+    filter: invert(1);
+}
+
 .absolute{
     cursor: pointer;
 }

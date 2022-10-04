@@ -8,5 +8,5 @@ import { concat, uniq } from 'lodash';
   styleUrls: ['./cardbyartist.component.css'],
 })
 export class CardbyartistComponent {
-  @Input() item: any = null;
+  @Input() text: any = null;
 }

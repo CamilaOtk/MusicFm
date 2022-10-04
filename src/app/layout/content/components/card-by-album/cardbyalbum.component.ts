@@ -8,5 +8,6 @@ import { concat, uniq } from 'lodash';
   styleUrls: ['./cardbyalbum.component.css'],
 })
 export class CardbyalbumComponent {
-  @Input() item: any = null;
+  @Input() image = "";
+  @Input() name = "";
 }

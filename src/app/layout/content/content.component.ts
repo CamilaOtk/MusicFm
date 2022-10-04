@@ -1,6 +1,4 @@
-import { SelectorMatcher } from '@angular/compiler';
-import { Component, EventEmitter, Output, Input } from '@angular/core';
-import { concat, uniq } from 'lodash';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'content-app',

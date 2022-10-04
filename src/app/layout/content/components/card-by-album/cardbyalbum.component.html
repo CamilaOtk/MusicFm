@@ -1,3 +1,5 @@
 <div class="card-by-album">
-  <img [src]="item.image[0] ?? ''"/>
+  <img [src]="image !== '' ? image : 'assets/default_album.png'" [ngClass]="image !== '' ? '' : 'filter-invert'"/>
+  <p class="text-name">{{name}}
+  </p>
 </div>

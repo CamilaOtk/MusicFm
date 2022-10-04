@@ -1,3 +1,17 @@
 .card-by-album {
-    margin: 5px;   
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items:center ;   
+    justify-content: flex-start ;   
+    margin: 10px 0;
+    
+}
+
+.text-name{
+    font-weight: 700;
+    font-size: medium;
+    font-family: sans-serif;
+    margin: 0 0.7rem;
+    margin-top: 1rem;
 }

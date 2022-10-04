@@ -12,5 +12,6 @@
   </ng-template>
 </div> -->
 <div class="card-base">
-  <!-- <cardbyalbum-app [item]="item"></cardbyalbum-app> -->
+  <cardbyalbum-app [name]="item.name" [image]="item?.imageDefault ?.src ?? ''"></cardbyalbum-app>
+
 </div>
