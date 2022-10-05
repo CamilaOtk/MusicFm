@@ -10,4 +10,10 @@ import { concat, uniq } from 'lodash';
 export class CardBaseComponent {
   @Input() type: string = '';
   @Input() item: any = null;
+
+  @Output() deleteHistorico: EventEmitter<string> = new EventEmitter<string>;
+
+  onRemoveHistorico(item: any){
+    this.deleteHistorico.emit(item);
+  }
 }

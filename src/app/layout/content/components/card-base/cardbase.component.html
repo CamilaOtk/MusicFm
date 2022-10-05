@@ -1,17 +1,28 @@
-<!-- <div class="card-base">
+<div class="card-base">
   <ng-container
-    *ngIf="type === 'album'; then albumBlock; else artistBlock">
+    *ngIf="type === 'historico'; then historicoBlock; else artistOrAlbumBlock"
+  >
   </ng-container>
 
-  <ng-template #albumBlock>
-    <cardbyalbum-app [item]="item"></cardbyalbum-app>
+  <ng-template #artistOrAlbumBlock>
+    <ng-container *ngIf="type === 'album'; then albumBlock; else artistBlock">
+    </ng-container>
+    <ng-template #albumBlock>
+      <cardbyalbum-app
+        [name]="item.name"
+        [image]="item?.imageDefault?.src ?? ''"
+      ></cardbyalbum-app>
+    </ng-template>
+
+    <ng-template #artistBlock>
+      <cardbyartist-app
+        [name]="item.name"
+        [image]="item?.imageDefault?.src ?? ''"
+      ></cardbyartist-app>
+    </ng-template>
   </ng-template>
 
-  <ng-template #artistBlock>
-    <cardbyartist-app [item]="item"></cardbyartist-app>
+  <ng-template #historicoBlock>
+    <cardhistoric-app [item]="item" (onRemoveHistorico)="onRemoveHistorico($event)"></cardhistoric-app>
   </ng-template>
-</div> -->
-<div class="card-base">
-  <cardbyalbum-app [name]="item.name" [image]="item?.imageDefault ?.src ?? ''"></cardbyalbum-app>
-
 </div>

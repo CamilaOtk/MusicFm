@@ -8,6 +8,8 @@ import { ContentComponent } from './layout/content/content.component';
 import { CardBaseComponent } from './layout/content/components/card-base/cardbase.component';
 import { CardbyalbumComponent } from './layout/content/components/card-by-album/cardbyalbum.component';
 import { CardbyartistComponent } from './layout/content/components/card-by-artist/cardbyartist.component';
+import { LeftmenuComponent } from './layout/content/components/left-menu/leftmenu.component';
+import { CardHistoricComponent } from './layout/content/components/card-historic/cardhistoric.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { CardbyartistComponent } from './layout/content/components/card-by-artis
     CardBaseComponent,
     CardbyalbumComponent,
     CardbyartistComponent,
+    LeftmenuComponent,
+    CardHistoricComponent
   ],
   imports: [BrowserModule],
   providers: [],

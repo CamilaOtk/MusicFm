@@ -1,0 +1,16 @@
+<div class="flex flex-col justify-end relative">
+  <div class="flex justify-center px-8 pt-8 relative">
+    <img
+      *ngFor="let image of item.images; let i = index"
+      [src]="image !== '' ? image : 'assets/default_microfone.png'"
+      [ngClass]="[
+        image !== '' ? image : 'filter-invert img-default',
+        ' image-card-' + i
+      ]"
+    />
+  </div>
+  <p class="text-name pt-128 px-8">{{ item.name }}</p>
+  <button class="button-delete" (click)="onClickRemoveItem(item)">
+    <i class="material-icons">delete</i>
+  </button>
+</div>

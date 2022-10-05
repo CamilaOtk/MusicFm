@@ -1,0 +1,20 @@
+<div class="card-by-aryist">
+  <div class="relative" >
+    <img
+      [src]="images[0] !== '' ? images[0] : 'assets/default_microfone.png'"
+      [ngClass]="images[0] !== '' ? '' : 'filter-invert'"
+      class="image-card-0"
+    />
+    <img
+      [src]="images[1] !== '' ? images[1] : 'assets/default_microfone.png'"
+      [ngClass]="images[1] !== '' ? '' : 'filter-invert'"
+      class="image-card-1"
+    />
+    <img
+      [src]="images[2] !== '' ? images[2] : 'assets/default_microfone.png'"
+      [ngClass]="images[2] !== '' ? '' : 'filter-invert'"
+      class="image-card-2"
+    />
+  </div>
+  <p class="text-name">{{ text }}</p>
+</div>

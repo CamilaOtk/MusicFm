@@ -1,5 +1,5 @@
 <div>
   <header-app (onSerachMusics)="onSearchApi($event)"></header-app>
-  <content-app [listItems]="listItems"></content-app>
+  <content-app (deleteItemHistorico)="deleteItemHistorico($event)" [dataArtistas]="dataArtistas" [dataAlbuns]="dataAlbuns" [listItems]="listItems" [tab]="tab" [menuTabs]="menuTabs" (handleChangeTab)="handleChangeTab($event)"></content-app>
   <loading-app [activeLoading]="activeLoading"></loading-app>
 </div>

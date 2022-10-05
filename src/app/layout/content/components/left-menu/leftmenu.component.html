@@ -1,0 +1,15 @@
+<div
+  class="left-menu relative flex flex-col justify-start max-h-full h-full"
+>
+  <div class="logo-container flex z-10 h-full w-full justify-center items-center bg-black opacity-15">
+    <img src="assets/music.png" class="" />
+  </div>
+  <div
+    class="left-menu absolute z-20 flex flex-col justify-start max-h-full h-full"
+  >
+    <p class="left-item" [ngClass]="tab === 'Dashboard' ? 'active' : ''" (click)="onClickTabItem('Dashboard')">Todos</p>
+    <p class="left-item" [ngClass]="tab === 'Albuns' ? 'active' : ''" (click)="onClickTabItem('Albuns')">Albuns</p>
+    <p class="left-item" [ngClass]="tab === 'Artistas' ? 'active' : ''" (click)="onClickTabItem('Artistas')">Artistas</p>
+    <p class="left-item" [ngClass]="tab === 'Historico' ? 'active' : ''" (click)="onClickTabItem('Historico')">Historico</p>
+  </div>
+</div>

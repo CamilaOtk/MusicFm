@@ -1,2 +1,7 @@
-
-  
+<div class="card-by-aryist">
+  <img
+    [src]="image !== '' ? image : 'assets/default_microfone.png'"
+    [ngClass]="image !== '' ? '' : 'filter-invert'"
+  />
+  <p class="text-name">{{ name }}</p>
+</div>

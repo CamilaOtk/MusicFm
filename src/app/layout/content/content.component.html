@@ -1,5 +1,12 @@
-<div class="content-container">
-  <div *ngFor="let item of listItems; let i = index">
-    <cardbase-app [type]="item.type" [item]="item"></cardbase-app>
+<div class="flex">
+  <leftmenu-app
+    [menuTabs]="menuTabs"
+    [tab]="tab"
+    (changeTab)="changeTab($event)"
+  ></leftmenu-app>
+  <div class="content-container">
+    <div *ngFor="let item of listItems; let i = index">
+      <cardbase-app [type]="item.type" [item]="item" (deleteHistorico)="deleteHistorico($event)"></cardbase-app>
+    </div>
   </div>
 </div>
