@@ -36,7 +36,6 @@ export const requets = async (
       }
     }
   } catch (err) {
-    console.log('erro', err);
     console.error('erro', err);
     throw null;
   }

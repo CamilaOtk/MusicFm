@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
   }
 
   deleteItemHistorico(item: any) {
-    console.log('cheguei', item);
     if (item.subType === "artist") {
       this.dataArtistas = this.dataArtistas.filter(
         (_item) => _item.id !== item.id

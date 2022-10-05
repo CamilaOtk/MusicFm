@@ -10,12 +10,8 @@ export class CardHistoricComponent  {
 
   @Output() onRemoveHistorico: EventEmitter<string> = new EventEmitter<string>;
 
-  ngOnChanges(){
-    console.log('vber', this.item)
-  }
 
   onClickRemoveItem(_item: any){
-    console.log('passei bro')
     this.onRemoveHistorico.emit(_item);
   }
 
